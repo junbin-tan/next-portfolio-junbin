@@ -25,22 +25,23 @@ export default function Home() {
         {/* Page 1  intro*/}
         <section className="min-h-screen">
            <nav className='py-10 mb-12 flex justify-between dark:text-white'>
-              <h1 className='text-xl'>developedbyjunbin</h1>
+              <h1 className='md:text-xl sm:text-xs'>developedbyjunbin</h1>
               <ul className='flex items-center'>
                 <li>
                   <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
                 </li>  
               <li><a href='/TanJunBin_Resume2023.pdf' download="Resume_TanJunBin" className='cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>Resume</a></li>
               </ul>
+              
            </nav>
            <div className='text-center p-10 mt-28'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tan Jun Bin</h2>
+            <h2 className='text-4xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tan Jun Bin</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Engineer</h3>
             <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200  md:text-xl max-w-xl mx-auto'>
               Aspiring Software Engineer and product enthusiast with a flair for innovative digital solutions. Dive in to discover my tech journey!
             </p>
            </div>
-           <div className='flex text-5xl justify-center gap-16 py-3 text-gray-600 dark:text-gray-400"'>
+           <div className='flex text-5xl justify-center gap-16 py-3 text-teal-600 dark:text-teal-400'>
             <AiFillTwitterCircle/>
             <a href='https://www.linkedin.com/in/tanjunbin/' className='cursor-pointer'>
               <AiFillLinkedin/>
@@ -80,10 +81,28 @@ export default function Home() {
                     <div className='lg:flex md:flex-none lg:gap-10'>
                       <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
                       <div className='lg:text-left'>
-                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>Software Engineering Intern</h3>
+                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>Software Engineering • Bitopia Technology </h3>
                         <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
                         <h4 className='text-teal-600 py-4'>Technology Stack</h4>
-                        <p className='text-gray-800 py-1'>add the stack here</p>
+                        <ul className='flex flex-wrap gap-2'>
+                          <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            React.js
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Vue.js
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            SQL
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Java
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Springboot
+                         </div></li>
+
+                          
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -92,20 +111,28 @@ export default function Home() {
                     <div className='lg:flex md:flex-none lg:gap-10'>
                       <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
                       <div className='lg:text-left'>
-                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>WhatGPT3 Website</h3>
+                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>Head of Products</h3>
                         <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
                         <h4 className='text-teal-600 py-4'>Technology Stack</h4>
-                        <p className='text-gray-800 py-1'>add the stack here</p>
+                        <ul className='flex flex-wrap'>
+                          <li><div className='items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
+                            something
+                         </div></li>
+                          
+                        </ul>
                       </div>
                     </div>
                   </div>
+
+                  
+                
 
 
                   <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
                     <div className='lg:flex md:flex-none lg:gap-10'>
                       <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
                       <div className='lg:text-left'>
-                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>WhatGPT3 Website</h3>
+                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>Ticketing Strategy & Projects</h3>
                         <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
                         <h4 className='text-teal-600 py-4'>Technology Stack</h4>
                         <p className='text-gray-800 py-1'>add the stack here</p>
@@ -170,6 +197,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Contact me */}
+
 
 
         </section> 
