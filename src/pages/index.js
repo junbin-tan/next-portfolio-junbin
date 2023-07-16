@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai';
+import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube , AiOutlineArrowDown } from 'react-icons/ai';
 import Image from "next/image";
 import junbin from 'public/JunBin.png';
 import 'src/pages/index.js';
@@ -8,6 +8,9 @@ import web1 from 'public/web1.png';
 import {useState} from "react";
 
 
+
+
+// favicon font fugaz one, #285e61
 export default function Home() {
   const [darkMode, setDarkMode] =useState(false);
   return (
@@ -26,11 +29,11 @@ export default function Home() {
               <ul className='flex items-center'>
                 <li>
                   <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/>
-                </li>
-                <li><a href='#' className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>Resume</a></li>
+                </li>  
+              <li><a href='/TanJunBin_Resume2023.pdf' download="Resume_TanJunBin" className='cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8'>Resume</a></li>
               </ul>
            </nav>
-           <div className='text-center p-10'>
+           <div className='text-center p-10 mt-28'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tan Jun Bin</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Engineer</h3>
             <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200  md:text-xl max-w-xl mx-auto'>
@@ -47,9 +50,14 @@ export default function Home() {
            <div className='relative mx-auto mt-10 object-center h-80 w-80 overflow-hidden md:h-96 md:w-96 '>
               <Image src={junbin} className='rounded-full h-80 w-80 object-cover object-top' layout='fill' objectFit='cover'/>
            </div>
+           <div className="bounce flex justify-center mt-32">
+              <AiOutlineArrowDown className='text-4xl text-teal-400'/>
+          </div>
         </section>
+        
+
         {/* Page 2 about */}
-        <section className='min-h-screen'>
+        <section className='mb-32'>
           <div className='p-10'>
             <h3 className='text-3xl py-1 dark:text-white '>About me</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
@@ -63,19 +71,58 @@ export default function Home() {
           
         </section>
         {/* Page 3 Skills and Experince */}
-        <section className='min-h-screen'>
-            <div className='p-10'>
-              <h3 className='text-3xl py-1 dark:text-white '>Skills & Experiences</h3>
-              <p></p>
-            </div>
+        <section className='mb-32'>
+          <div className='p-10'>
+              <h3 className='text-3xl py-1 dark:text-white '>Experience</h3>
+
+                <div className='lg:flex flex-col'>
+                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
+                    <div className='lg:flex md:flex-none lg:gap-10'>
+                      <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
+                      <div className='lg:text-left'>
+                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>Software Engineering Intern</h3>
+                        <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
+                        <h4 className='text-teal-600 py-4'>Technology Stack</h4>
+                        <p className='text-gray-800 py-1'>add the stack here</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
+                    <div className='lg:flex md:flex-none lg:gap-10'>
+                      <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
+                      <div className='lg:text-left'>
+                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>WhatGPT3 Website</h3>
+                        <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
+                        <h4 className='text-teal-600 py-4'>Technology Stack</h4>
+                        <p className='text-gray-800 py-1'>add the stack here</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
+                    <div className='lg:flex md:flex-none lg:gap-10'>
+                      <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
+                      <div className='lg:text-left'>
+                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>WhatGPT3 Website</h3>
+                        <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
+                        <h4 className='text-teal-600 py-4'>Technology Stack</h4>
+                        <p className='text-gray-800 py-1'>add the stack here</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+          </div>
         </section>
         {/* Portfolio */}
 
-        <section className='min-h-screen'>
+        <section className='mb-32'>
             <div className='p-10'>
-              <h3 className='text-3xl py-1 dark:text-white '>Portfolio</h3>
+              <h3 className='text-3xl py-1 dark:text-white '>Projects</h3>
               <div className='lg:flex gap-10'>
-                <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-10'> 
+                <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
                   <Image className='mx-auto rounded-lg' src={web1} width={400} height={400}/>
                   <h3 className='text-lg font-medium pt-8 pb-2'>WhatGPT3 Website</h3>
                   <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
@@ -83,7 +130,7 @@ export default function Home() {
                   <p className='text-gray-800 py-1'>add the stack here</p>
                 </div>
 
-                <div className='text-center shadow-lg dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-10'> 
+                <div className='text-center shadow-lg dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
                   <Image className='mx-auto rounded-lg' src={web1} width={400} height={400}/>
                   <h3 className='text-lg font-medium pt-8 pb-2'>Website 2</h3>
                   <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
@@ -91,7 +138,7 @@ export default function Home() {
                   <p className='text-gray-800 py-1'>add the stack here</p>
                 </div>
 
-                <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-10'> 
+                <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
                   <Image className='mx-auto rounded-lg' src={web1} width={400} height={400}/>
                   <h3 className='text-lg font-medium pt-8 pb-2'>Website 3</h3>
                   <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
@@ -126,11 +173,8 @@ export default function Home() {
 
 
         </section> 
-
-
-
-
       </main>
     </div>
+
   )
 }
