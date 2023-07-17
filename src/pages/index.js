@@ -77,12 +77,12 @@ export default function Home() {
               <h3 className='text-3xl py-1 dark:text-white '>Experience</h3>
 
                 <div className='lg:flex flex-col'>
-                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
-                    <div className='lg:flex md:flex-none lg:gap-10'>
-                      <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
-                      <div className='lg:text-left'>
-                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>Software Engineering • Bitopia Technology </h3>
-                        <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
+                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-teal-200 hover:bg-opacity-50'> 
+                    <div className='lg:flex md:flex-none  lg:gap-10'>
+                      <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>MAY 2023 - PRESENT</header>
+                      <div className='lg:text-left '>
+                        <h3 className='text-lg font-medium pb-2 leading-tight'>Software Engineering • Bitopia Technology </h3>
+                        <p className='py-2 leading-normal text-md'>Developed custom management systems using the Spring Boot/Hibernate framework, JAVA, and Vue.js. Conducted software product testing on the latest versions of management systems. Contributed to the development of a modular 2FA feature for an existing system, allowing selective 2FA activation for specific user groups.</p>
                         <h4 className='text-teal-600 py-4'>Technology Stack</h4>
                         <ul className='flex flex-wrap gap-2'>
                           <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
@@ -100,8 +100,6 @@ export default function Home() {
                          <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
                             Springboot
                          </div></li>
-
-                          
                         </ul>
                       </div>
                     </div>
