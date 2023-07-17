@@ -21,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className='bg-white px-10 md:px-20 lg:px-20 xl:px-40 dark:bg-gray-900'>
         {/* Page 1  intro*/}
         <section className="min-h-screen">
            <nav className='py-10 mb-12 flex justify-between dark:text-white'>
@@ -75,71 +75,107 @@ export default function Home() {
         <section className='mb-32'>
           <div className='p-10'>
               <h3 className='text-3xl py-1 dark:text-white '>Experience</h3>
-
                 <div className='lg:flex flex-col'>
-                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-teal-200 hover:bg-opacity-50'> 
+                 {/* one */}
+                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
+                    <div className='lg:flex md:flex-none  lg:gap-10'>
+                      <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>JUN 2023 - PRESENT</header>
+                      <div className='lg:text-left '>
+                        <h3 className='text-lg font-medium pb-2 leading-tight'>Head of Product • Google Developer Student Clubs NUS  </h3>
+                        <p className='py-2 leading-normal text-md'>As Head of Product for the Google Developer Students' Club NUS projects, led the development of technological solutions for non-profit organizations. Defined product vision, strategy, and roadmap aligned with organizational goals. Collaborated with cross-functional teams, managed product development, executed successful launches, and iterated based on user feedback. Skilled in stakeholder communication and product advocacy.</p>
+                        <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
+                        <ul className='flex flex-wrap gap-2'>
+                          <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Product Management
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Stakeholder Management
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Agile Methodologies
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Problem Solving and Decision Making
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Product Strategy and Vision
+                         </div></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  {/* two */}
+                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
                     <div className='lg:flex md:flex-none  lg:gap-10'>
                       <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>MAY 2023 - PRESENT</header>
                       <div className='lg:text-left '>
-                        <h3 className='text-lg font-medium pb-2 leading-tight'>Software Engineering • Bitopia Technology </h3>
-                        <p className='py-2 leading-normal text-md'>Developed custom management systems using the Spring Boot/Hibernate framework, JAVA, and Vue.js. Conducted software product testing on the latest versions of management systems. Contributed to the development of a modular 2FA feature for an existing system, allowing selective 2FA activation for specific user groups.</p>
-                        <h4 className='text-teal-600 py-4'>Technology Stack</h4>
+                        <h3 className='text-lg font-medium pb-2 leading-tight'>Software Engineering Intern • Bitopia Technology </h3>
+                        <p className='py-2 leading-normal text-md'>Developed high-quality and robust production code for custom management systems based on client specifications, while also conducting software product testing on the latest production of these systems. Implemented a modular 2FA solution for an existing system, allowing for selective activation of 2FA for specific user groups.</p>
+                        <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
                         <ul className='flex flex-wrap gap-2'>
-                          <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                          <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
                             React.js
                          </div></li>
-                         <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
                             Vue.js
                          </div></li>
-                         <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
                             SQL
                          </div></li>
-                         <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
                             Java
                          </div></li>
-                         <li><div className='items-center rounded-full bg-teal-600/10 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
                             Springboot
                          </div></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
-                    <div className='lg:flex md:flex-none lg:gap-10'>
-                      <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
-                      <div className='lg:text-left'>
-                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>Head of Products</h3>
-                        <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
-                        <h4 className='text-teal-600 py-4'>Technology Stack</h4>
-                        <ul className='flex flex-wrap'>
-                          <li><div className='items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 '>
-                            something
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Hibernate
                          </div></li>
-                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  {/* three */}
+                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
+                    <div className='lg:flex md:flex-none  lg:gap-10'>
+                      <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>MAY 2022 - AUG 2022</header>
+                      <div className='lg:text-left '>
+                        <h3 className='text-lg font-medium pb-2 leading-tight'>Ticketing Strategy & Projects Intern • Land Transport Authority (LTA) Singapore </h3>
+                        <p className='py-2 leading-normal text-md'>Collaborated closely with upper management to ensure successful preparation for the SimplyGo Concession Card Launch. Managed the distribution of launch information to over 200 educational institutions and served as the primary liaison for the collection and dissemination of communication materials across 12+ IHL. Conducted comprehensive analysis and research, implementing promotional trials with retail partners to optimize the SimplyGo Concession Launch</p>
+                        <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
+                        <ul className='flex flex-wrap gap-2'>
+                          <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Product Management
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Stakeholder Management
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Marketing and Promotions
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Problem Solving and Decision Making
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Product Strategy and Vision
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Data Analytics
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Retail Partnership
+                         </div></li>
                         </ul>
                       </div>
                     </div>
                   </div>
 
-                  
-                
 
 
-                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
-                    <div className='lg:flex md:flex-none lg:gap-10'>
-                      <Image className='mx-auto rounded-lg' src={web1}  height={200}/>
-                      <div className='lg:text-left'>
-                        <h3 className='lg:text-center text-lg font-medium pt-8 pb-2'>Ticketing Strategy & Projects</h3>
-                        <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
-                        <h4 className='text-teal-600 py-4'>Technology Stack</h4>
-                        <p className='text-gray-800 py-1'>add the stack here</p>
-                      </div>
-                    </div>
-                  </div>
+
 
                 </div>
-          </div>
+            </div>
         </section>
         {/* Portfolio */}
 
