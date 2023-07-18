@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube , AiOutlineArrowDown } from 'react-icons/ai';
+import { BiLinkExternal } from "react-icons/bi";
 import Image from "next/image";
 import junbin from 'public/JunBin.png';
 import 'src/pages/index.js';
@@ -185,18 +186,25 @@ export default function Home() {
               <h3 className='text-3xl py-1 dark:text-white '>Projects</h3>
               <div className='lg:flex flex-col gap-10'>
 
-
                   <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
                     <div className='lg:flex md:flex-none  lg:gap-10'>
                       <div className='flex items-center'>
                           <Image className="mx-auto rounded-lg" src={web1} height={200} width={200} />
                       </div>
               
-                      <div className='lg:text-left '>
-                        <h3 className='text-lg font-medium pb-2 leading-tight'>WhatIsGPT3 Website</h3>
+                      <div className='lg:text-left mt-1 '>
+                        <div className='flex gap-2 sm:place-content-center sm:mt-5 md:place-content-center lg:place-content-start'> 
+                          < h3 className='text-lg font-medium pb-2'>WhatIsGPT3 Website</h3>
+                          <a href='https://figmatowebsitepractice.netlify.app/' target='_blank'>
+                            <div className='flex gap-1 items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                              Link 
+                              <BiLinkExternal className='text-xs'/>
+                            </div>
+                          </a>
+                        </div>
                         <p className='py-2 leading-normal text-md'>Transforming Figma Design into a Dynamic React Website</p>
                         <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
-                        <ul className='flex flex-wrap gap-2'>
+                        <ul className='flex flex-wrap sm:place-content-center md:place-content-center lg:place-content-start gap-2'>
                           <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
                             Figma
                          </div></li>
@@ -207,7 +215,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-
+             
 
                
 
