@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube , AiOutlineArrowDown } from 'react-icons/ai';
-import { BiLinkExternal } from "react-icons/bi";
+import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
 import Image from "next/image";
 import junbin from 'public/JunBin.png';
 import 'src/pages/index.js';
 import web1 from 'public/web1.png';
+import whatChat from 'public/whatChat.png';
 import {useState} from "react";
 
 
@@ -79,7 +80,7 @@ export default function Home() {
               <h3 className='text-3xl py-1 dark:text-white '>Experience</h3>
                 <div className='lg:flex flex-col'>
                  {/* one */}
-                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
+                  <div className='text-center shadow-lg hover:scale-105 ease-in-out duration-300 dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
                     <div className='lg:flex md:flex-none  lg:gap-10'>
                       <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>JUN 2023 - PRESENT</header>
                       <div className='lg:text-left '>
@@ -107,7 +108,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* two */}
-                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
+                  <div className='text-center shadow-lg  hover:scale-105 ease-in-out duration-300 dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
                     <div className='lg:flex md:flex-none  lg:gap-10'>
                       <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>MAY 2023 - PRESENT</header>
                       <div className='lg:text-left '>
@@ -138,7 +139,7 @@ export default function Home() {
                     </div>
                   </div>
                   {/* three */}
-                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
+                  <div className='text-center shadow-lg hover:scale-105 ease-in-out duration-300  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
                     <div className='lg:flex md:flex-none  lg:gap-10'>
                       <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>MAY 2022 - AUG 2022</header>
                       <div className='lg:text-left '>
@@ -172,7 +173,7 @@ export default function Home() {
                     </div>
                   </div>
 
-
+                  {/* end */}
 
 
 
@@ -184,23 +185,73 @@ export default function Home() {
         <section className='mb-32'>
             <div className='p-10'>
               <h3 className='text-3xl py-1 dark:text-white '>Projects</h3>
-              <div className='lg:flex flex-col gap-10'>
+              <div className='lg:flex flex-col'>
 
-                  <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
-                    <div className='lg:flex md:flex-none  lg:gap-10'>
-                      <div className='flex items-center'>
-                          <Image className="mx-auto rounded-lg" src={web1} height={200} width={200} />
-                      </div>
-              
-                      <div className='lg:text-left mt-1 '>
-                        <div className='flex gap-2 sm:place-content-center sm:mt-5 md:place-content-center lg:place-content-start'> 
-                          < h3 className='text-lg font-medium pb-2'>WhatIsGPT3 Website</h3>
-                          <a href='https://figmatowebsitepractice.netlify.app/' target='_blank'>
-                            <div className='flex gap-1 items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
-                              Link 
-                              <BiLinkExternal className='text-xs'/>
-                            </div>
+                {/* PROJECT 1 */}
+                  <div className='text-center shadow-lg hover:scale-105 ease-in-out duration-300 dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
+                    <div className='lg:flex md:flex-none  lg:gap-10 '>
+                      <div className='flex items-center flex-col'>
+                          <a href='https://whatchat.netlify.app' target='_blank'>
+                            <Image className="mx-auto rounded-lg" src={whatChat} height={200} width={200} />
                           </a>
+                          <div className='flex flex-row gap-2 mt-3'>
+                            <a href='https://whatchat.netlify.app' target='_blank'>
+                                <div className='hover:scale-125 ease-in-out duration-300 flex gap-1 items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800'>
+                                  Link 
+                                  <BiLinkExternal className='text-xs'/>
+                                </div>
+                            </a>
+                            <a href='https://github.com/junbin-tan/chatapp' target='_blank'>
+                                <div className='hover:scale-125 ease-in-out duration-300 flex gap-1 items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                                  Code
+                                  <BiLogoGithub className='text-xs'/>
+                                </div>
+                            </a>
+                          </div>
+                      </div>
+                      <div className='lg:text-left mt-1'>
+                        <div className='flex gap-2 mt-5 sm:place-content-center md:place-content-center lg:place-content-start'> 
+                          < h3 className='text-lg font-medium pb-2'>WhatChat App</h3>
+                        </div>
+                        <p className='py-2 leading-normal text-md'>Connect and chat effortlessly in our sleek and user-friendly app</p>
+                        <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
+                        <ul className='flex flex-wrap sm:place-content-center md:place-content-center lg:place-content-start gap-2'>
+                          <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Firebase
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            React.js
+                         </div></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+             
+                  {/* Project 2 */}
+                  <div className='text-center shadow-lg hover:scale-105 ease-in-out duration-300 dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
+                    <div className='lg:flex md:flex-none  lg:gap-10'>
+                      <div className='flex items-center flex-col'>
+                          <a href='https://figmatowebsitepractice.netlify.app/' target='_blank'>
+                            <Image className="mx-auto rounded-lg" src={web1} height={200} width={200} />
+                          </a>
+                          <div className='flex flex-row gap-2 mt-3'>
+                            <a href='https://figmatowebsitepractice.netlify.app/' target='_blank'>
+                                <div className='hover:scale-125 ease-in-out duration-300 flex gap-1 items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800'>
+                                  Link 
+                                  <BiLinkExternal className='text-xs'/>
+                                </div>
+                            </a>
+                            <a href='https://github.com/junbin-tan/gpt3_junbin' target='_blank'>
+                                <div className='hover:scale-125 ease-in-out duration-300 flex gap-1 items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                                  Code
+                                  <BiLogoGithub className='text-xs'/>
+                                </div>
+                            </a>
+                          </div>
+                      </div>
+                      <div className='lg:text-left mt-1 '>
+                        <div className='flex gap-2 mt-5 sm:place-content-center md:place-content-center lg:place-content-start'> 
+                          < h3 className='text-lg font-medium pb-2'>WhatIsGPT3 Website</h3>
                         </div>
                         <p className='py-2 leading-normal text-md'>Transforming Figma Design into a Dynamic React Website</p>
                         <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
@@ -216,24 +267,47 @@ export default function Home() {
                     </div>
                   </div>
              
-
-               
-
-                <div className='text-center shadow-lg dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
-                  <Image className='mx-auto rounded-lg' src={web1} width={400} height={400}/>
-                  <h3 className='text-lg font-medium pt-8 pb-2'>Website 2</h3>
-                  <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
-                  <h4 className='text-teal-600 py-4'>Technology Stack</h4>
-                  <p className='text-gray-800 py-1'>add the stack here</p>
-                </div>
-
-                <div className='text-center shadow-lg  dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5'> 
-                  <Image className='mx-auto rounded-lg' src={web1} width={400} height={400}/>
-                  <h3 className='text-lg font-medium pt-8 pb-2'>Website 3</h3>
-                  <p className='py-2'>Transforming Figma Design into a Dynamic React Website</p>
-                  <h4 className='text-teal-600 py-4'>Technology Stack</h4>
-                  <p className='text-gray-800 py-1'>add the stack here</p>
-                </div>
+                  {/* Project 3 */}
+                  <div className='text-center shadow-lg hover:scale-105 ease-in-out duration-300 dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
+                    <div className='lg:flex md:flex-none  lg:gap-10'>
+                      <div className='flex items-center flex-col'>
+                          <a href='https://figmatowebsitepractice.netlify.app/' target='_blank'>
+                            <Image className="mx-auto rounded-lg" src={web1} height={200} width={200} />
+                          </a>
+                          <div className='flex flex-row gap-2 mt-3'>
+                            <a href='https://figmatowebsitepractice.netlify.app/' target='_blank'>
+                                <div className='hover:scale-125 ease-in-out duration-300 flex gap-1 items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800'>
+                                  Link 
+                                  <BiLinkExternal className='text-xs'/>
+                                </div>
+                            </a>
+                            <a href='https://github.com/junbin-tan/gpt3_junbin' target='_blank'>
+                                <div className='hover:scale-125 ease-in-out duration-300 flex gap-1 items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                                  Code
+                                  <BiLogoGithub className='text-xs'/>
+                                </div>
+                            </a>
+                          </div>
+                      </div>
+                      <div className='lg:text-left mt-1 '>
+                        <div className='flex gap-2 mt-5 sm:place-content-center md:place-content-center lg:place-content-start'> 
+                          < h3 className='text-lg font-medium pb-2'>WhatIsGPT3 Website</h3>
+                        </div>
+                        <p className='py-2 leading-normal text-md'>Transforming Figma Design into a Dynamic React Website</p>
+                        <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
+                        <ul className='flex flex-wrap sm:place-content-center md:place-content-center lg:place-content-start gap-2'>
+                          <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            Figma
+                         </div></li>
+                         <li><div className='items-center rounded-full bg-teal-100 px-3 py-1 text-xs font-medium leading-5 text-teal-800 '>
+                            React.js
+                         </div></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+             
+                  {/* end */}
               </div>
             </div>
         </section>
