@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube , AiOutlineArrowDown } from 'react-icons/ai';
+import { AiFillInstagram, AiFillLinkedin , AiOutlineArrowDown } from 'react-icons/ai';
 import { BiLinkExternal, BiLogoGithub } from "react-icons/bi";
 import Image from "next/image";
 import junbin from 'public/JunBin.png';
@@ -51,11 +51,15 @@ export default function Home() {
             </p>
            </div>
            <div className='flex text-5xl justify-center gap-16 py-3 text-teal-600 dark:text-teal-400'>
-            <AiFillTwitterCircle/>
-            <a href='https://www.linkedin.com/in/tanjunbin/' className='cursor-pointer'>
+           <a href='https://www.instagram.com/nolucktdy/' target='_blank' className='cursor-pointer'>
+            <AiFillInstagram/>
+            </a>
+            <a href='https://www.linkedin.com/in/tanjunbin/' target='_blank' className='cursor-pointer'>
               <AiFillLinkedin/>
             </a>
-            <AiFillYoutube/>
+            <a href='https://github.com/junbin-tan' target='_blank' className='cursor-pointer'>
+            <BiLogoGithub/>
+            </a>
            </div>
            <div className='relative mx-auto mt-10 object-center h-80 w-80 overflow-hidden md:h-96 md:w-96 '>
               <Image src={junbin} className='rounded-full h-80 w-80 object-cover object-top' layout='fill' objectFit='cover'/>
