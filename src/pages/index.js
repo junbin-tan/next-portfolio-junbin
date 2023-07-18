@@ -67,7 +67,7 @@ export default function Home() {
         
 
         {/* Page 2 about */}
-        <section id='two' className='grid h-screen place-items-center'>
+        <section id='two' className='mb-9'>
           <div className='p-10'>
             <h3 className='text-3xl py-1 dark:text-white '>About me</h3>
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
@@ -80,7 +80,7 @@ export default function Home() {
           </div>          
         </section>
         {/* Page 3 Skills and Experince */}
-        <section id='three' className='min-h-screen'>
+        <section id='three' className='mb-9'>
           <div className='p-10'>
               <h3 className='text-3xl py-1 dark:text-white '>Experience</h3>
                 <div className='lg:flex flex-col'>
@@ -187,7 +187,7 @@ export default function Home() {
         </section>
         {/* Portfolio */}
 
-        <section id='four' className='min-h-screen'>
+        <section id='four' className='mb-9'>
             <div className='p-10'>
               <h3 className='text-3xl py-1 dark:text-white '>Projects</h3>
               <div className='lg:flex flex-col'>
@@ -348,13 +348,13 @@ export default function Home() {
                 <Image src={life5} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
               </div>
             </div>
+            <div className='mb-10 mt-10 text-teal-500 text-center'>
+              developedbyjunbin_ver1.1_2023
+            </div>
           </div>
-
-          {/* Contact me */}
-
-
-
         </section> 
+
+
       </main>
     </div>
 
