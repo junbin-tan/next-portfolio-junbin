@@ -33,7 +33,7 @@ export default function Home() {
       <main className='bg-white px-10 md:px-20 lg:px-20 xl:px-40 dark:bg-gray-900'>
         {/* Page 1  intro*/}
         <section id='one' className="min-h-screen">
-           <nav className='py-10 mb-12 flex justify-between dark:text-white'>
+           <nav className='py-10 mb-1 flex justify-between dark:text-white'>
               <h1 className='md:text-xl sm:text-xs'>developedbyjunbin</h1>
               <ul className='flex items-center'>
                 <li>
@@ -43,14 +43,14 @@ export default function Home() {
               </ul>
               
            </nav>
-           <div className='text-center p-10 mt-28'>
+           <div className='text-center '>
             <h2 className='text-4xl py-2 text-teal-600 font-medium md:text-6xl dark:text-teal-400'>Tan Jun Bin</h2>
             <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Software Engineer</h3>
             <p className='text-md py-5 leading-8 text-gray-800 dark:text-gray-200  md:text-xl max-w-xl mx-auto'>
               Aspiring Software Engineer and product enthusiast with a flair for innovative digital solutions. Dive in to discover my tech journey!
             </p>
            </div>
-           <div className='flex text-5xl justify-center gap-16 py-3 text-teal-600 dark:text-teal-400'>
+           <div className='flex text-5xl justify-center gap-16 text-teal-600 dark:text-teal-400'>
            <a href='https://www.instagram.com/nolucktdy/' target='_blank' className='cursor-pointer'>
             <AiFillInstagram/>
             </a>
@@ -61,10 +61,10 @@ export default function Home() {
             <BiLogoGithub/>
             </a>
            </div>
-           <div className='relative mx-auto mt-10 object-center h-80 w-80 overflow-hidden md:h-96 md:w-96 '>
+           <div className='relative mx-auto mt-5 object-center h-80 w-80 overflow-hidden md:h-96 md:w-96 '>
               <Image src={junbin} className='rounded-full h-80 w-80 object-cover object-top' layout='fill' objectFit='cover'/>
            </div>
-           <div className="bounce flex justify-center mt-32">
+           <div className="bounce flex justify-center mt-16">
               <AiOutlineArrowDown className='text-4xl text-teal-500'/>
           </div>
         </section>
