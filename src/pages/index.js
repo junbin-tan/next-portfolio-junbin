@@ -13,6 +13,7 @@ import life2 from 'public/life2.jpeg';
 import life3 from 'public/life3.jpeg';
 import life4 from 'public/life4.jpeg';
 import life5 from 'public/life5.jpeg';
+import life6 from 'public/life6.jpeg';
 import {useState} from "react";
 
 
@@ -81,7 +82,11 @@ export default function Home() {
             <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-200'>
             Off-screen, my passions lie in immersing myself in anime, devouring manga, and exploring the world through photography. I'm thrilled to continue my journey towards making technology increasingly accessible and intuitive.
             </p>
-          </div>          
+            <div className='basis-1/3 flex-1'>
+                <Image src={life6} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
+            </div> 
+          </div>
+       
         </section>
         {/* Page 3 Skills and Experince */}
         <section id='three' className='mb-9'>
@@ -220,7 +225,7 @@ export default function Home() {
                       </div>
                       <div className='lg:text-left mt-1'>
                         <div className='flex place-content-center gap-2 mt-5 sm:place-content-center md:place-content-center lg:place-content-start'> 
-                          < h3 className='text-lg font-medium pb-2'>WhatChat App</h3>
+                          < h3 className='text-lg font-medium pb-2'>WhatChat App <span className='text-sm text-teal-400'>&#123;tutorial&#125;</span></h3>
                         </div>
                         <p className='py-2 leading-normal text-sm'>Connect and chat effortlessly in our sleek and user-friendly app</p>
                         <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
@@ -260,7 +265,7 @@ export default function Home() {
                       </div>
                       <div className='lg:text-left mt-1 '>
                         <div className='flex place-content-center gap-2 mt-5 sm:place-content-center md:place-content-center lg:place-content-start'> 
-                          < h3 className='text-lg font-medium pb-2'>Pawfect Animal Adoption App</h3>
+                          < h3 className='text-lg font-medium pb-2'>Pawfect Animal Adoption App <span className='text-sm text-teal-400'>&#123;project&#125;</span></h3>
                         </div>
                         <p className='py-2 leading-normal text-sm'>Find your perfect furry companion with animal adoption app.</p>
                         <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
@@ -306,7 +311,7 @@ export default function Home() {
                       </div>
                       <div className='lg:text-left mt-1 '>
                         <div className='flex place-content-center gap-2 mt-5 sm:place-content-center md:place-content-center lg:place-content-start'> 
-                          < h3 className='text-lg font-medium pb-2'>WhatIsGPT3 Website</h3>
+                          < h3 className='text-lg font-medium pb-2'>WhatIsGPT3 <span className='text-sm text-teal-400'>&#123;tutorial&#125;</span></h3>
                         </div>
                         <p className='py-2 leading-normal text-sm'>Transforming Figma Design into a Dynamic React Website</p>
                         <h4 className='text-teal-600 py-4'>Technical Proficiencies</h4>
@@ -327,7 +332,10 @@ export default function Home() {
             </div>
         </section>
 
-        {/* tester */}
+        {/* Page 4 education */}
+       
+
+        {/* me */}
         <section id='five' className='min-h-screen'>
           <div className='p-10'>
             <h3 className='text-3xl py-1 dark:text-white '>Beyond Work</h3>
