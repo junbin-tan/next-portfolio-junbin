@@ -124,7 +124,7 @@ export default function Home() {
                   {/* two */}
                   <div className='text-center shadow-lg  hover:scale-105 ease-in-out duration-300 dark:bg-white dark:shadow-dark-lg p-10 rounded-xl my-5 hover:bg-gray-300 hover:bg-opacity-50'> 
                     <div className='lg:flex md:flex-none  lg:gap-10'>
-                      <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>MAY 2023 - PRESENT</header>
+                      <header className='flex-none z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2'>MAY 2023 - JULY 2023</header>
                       <div className='lg:text-left '>
                         <h3 className='text-lg font-medium pb-2 leading-tight'>Software Engineering Intern • Bitopia Technology </h3>
                         <p className='py-2 leading-normal text-sm'>Developed high-quality and robust production code for custom management systems based on client specifications, while also conducting software product testing on the latest production of these systems. Implemented a modular 2FA solution for an existing system, allowing for selective activation of 2FA for specific user groups.</p>
